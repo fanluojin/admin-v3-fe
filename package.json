@@ -1,0 +1,8 @@
+{
+  "name": "admin-v3-fe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:fanluojin/admin-v3-fe.git",
+  "author": "Zhangsan <2973986808@qq.com>",
+  "license": "MIT"
+}
