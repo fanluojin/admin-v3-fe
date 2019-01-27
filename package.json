@@ -26,8 +26,8 @@
     "dist": "node_modules/.bin/webpack -p"
   },
   "dependencies": {
-    "font-awesome": "4.7.0",
     "react": "16.2.0",
-    "react-dom": "16.2.0"
+    "react-dom": "16.2.0",
+    "react-routeer-dom": "4.2.2"
   }
 }

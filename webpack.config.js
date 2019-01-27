@@ -9,6 +9,13 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'js/app.js'
   },
+  resolve: {
+    alias: {
+      page: path.resolve(__dirname, 'src/page'),
+      components: path.resolve(__dirname, 'src/components'),
+
+    }
+  },
   module: {
     rules: [
       // es6 react
@@ -68,7 +75,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      favicon: './favicon.ico'
     }),
     new ExtractTextPlugin('css/[name].css'),
     // 提出公共模块
@@ -78,6 +86,9 @@ module.exports = {
     })
   ],
   devServer: {
-    port: 8086
+    port: 8086,
+    historyApiFallback: {
+      index: '/dist/index.html'
+    }
   }
 };
